@@ -1,0 +1,126 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 780px;
+    position:absolute;
+    top: 30%;
+}
+
+.parte1{
+    width: 50%;
+}
+.parte2{
+    width: 50%;
+    height: 300px;
+    background-image: url('./images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+}
+
+.foto{
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    text-align: start;
+    margin-left: 16px;
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+    
+}
+
+p{
+    color: hsl(0, 0%, 100%);
+    margin-left: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.estadisticas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estadisticas div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 30px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+.gris{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+      width: 320px;
+    }
+    section{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .parte1{
+        width: 100%;
+        padding: 16px;
+    }
+
+    .parte2{
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .estadisticas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .estadisticas div {
+        margin: 15px 0px;
+    }
+} 
